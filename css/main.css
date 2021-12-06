@@ -6,12 +6,12 @@ font-family: 'Playfair Display', serif;
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
 }
 
 h1,
@@ -20,137 +20,157 @@ h3,
 h4,
 h5,
 h6 {
-	margin: 0;
+  margin: 0;
 }
 
 img {
-	display: block;
-	max-width: 100%;
-	height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
-	width: 1170px;
-	margin-left: auto;
-	margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(184, 233, 247);
 }
 
 .section {
-	padding-top: 90px;
-	padding-bottom: 90px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .section-header {
-	margin-bottom: 40px;
-	text-align: center;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .section-header-title {
-	margin-bottom: 10px;
-	font-family: 'Playfair Display', serif;
-	font-weight: 400;
-	font-size: 42px;
-	line-height: normal;
-	color: #000000;
+  margin-bottom: 10px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: normal;
+  color: #000000;
 }
 
 .section-header p {
-	font-size: 14px;
-	line-height: normal;
-	text-transform: uppercase;
-	color: #999999;
+  font-size: 14px;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #999999;
 }
 
 /* Product card */
 
 .products-row {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
+  margin-left: -15px;
+  margin-right: -15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .product {
-	margin-bottom: 40px;
-	width: 270px;
-	height: 420px;
-	text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 40px;
+  width: 270px;
+  height: 420px;
+  text-align: center;
 }
 
 .product-img {
-	margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .product-title {
-	margin-bottom: 12px;
-	font-family: 'Playfair Display', serif;
-	font-weight: 400;
-	font-size: 20px;
-	color: #000000;
+  margin-bottom: 12px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
 }
 
 .product-price-wrapper {
-	font-size: 14px;
-	text-transform: uppercase;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .product-price-old {
-	margin-right: 10px;
-	text-decoration-line: line-through;
-	color: #999999;
+  margin-right: 10px;
+  text-decoration-line: line-through;
+  color: #999999;
 }
 
 .product-price-new {
-	font-weight: 700;
-	color: #f72464;
+  font-weight: 700;
+  color: #f72464;
 }
 
 /* Button */
 
 .section-button-wrapper {
-    text-align: center;
+  text-align: center;
 }
 
 .button {
-    display: inline-block;
-    padding-left: 40px;
-    padding-right: 40px;
+  display: inline-block;
+  padding-left: 40px;
+  padding-right: 40px;
 
-    height: 42px;
-    background: #FFFFFF;
-    border: 1px solid #F72464;
-    border-radius: 4px;
+  height: 42px;
+  background: #ffffff;
+  border: 1px solid #f72464;
+  border-radius: 4px;
 
-    font-family: 'Playfair Display', serif;
-    font-size: 16px;
-    line-height: 42px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #777777;
-    text-decoration: none;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #777777;
+  text-decoration: none;
 }
 
- /* для максимальной ширины экрана до 1199px  */
+/* tablet для максимальной ширины экрана до 1199px  */
 @media (max-width: 1199px) {
-	.container {
-		width: 900px;
-		background-color: rgb(214, 171, 171);
-		}
-	}
-	
- /* для максимальной ширины экрана до 899px  */
+  .container {
+    width: 900px;
+    background-color: rgb(214, 171, 171);
+  }
+}
+
+/* mobile для максимальной ширины экрана до 899px  */
 @media (max-width: 899px) {
-	.container {
-		width: 600px;
-		background-color: rgb(189, 240, 197);
-		}
-	
-	}
-	
-	 /* для максимальной ширины экрана до 599px  */
-	@media (max-width: 599px) {
-	 .container {
-		 width: 100%;
-		 background-color: rgb(242, 242, 179);
-		 }
-	}
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .container {
+    width: 600px;
+    background-color: rgb(189, 240, 197);
+  }
+  .section-header-title {
+    font-size: 32px;
+  }
+  .section-header p {
+    font-size: 12px;
+  }
+}
+
+/* mobile xs для максимальной ширины экрана до 599px  */
+@media (max-width: 599px) {
+  .container {
+    width: 320px;
+    background-color: rgb(242, 242, 179);
+  }
+  .products-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
